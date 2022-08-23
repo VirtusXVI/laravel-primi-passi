@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/1', function () {
+
+    $data = [
+        'points' => ['Home','About','Docs','Laracasts','News','Blog','Nova','Forge'],
+    ];
+
+    return view('home', $data);
+});
+
+Route::get('/2', function () {
     return view('welcome');
 });
