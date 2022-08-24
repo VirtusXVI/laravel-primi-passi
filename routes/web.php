@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/1', function () {
+Route::get('/home', function () {
 
     $data = [
         'points' => ['Home','About','Docs','Laracasts','News','Blog','Nova','Forge'],
@@ -22,6 +22,6 @@ Route::get('/1', function () {
     return view('home', $data);
 });
 
-Route::get('/2', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });

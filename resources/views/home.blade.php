@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Hello World</h1>
-    <a href="/2">Clicca Qui</a>
+    <a href="/welcome">Clicca Qui</a>
     <ul>
         @foreach($points as $point)
             <li>{{ $point }}</li>
